@@ -184,6 +184,10 @@ let
       })
     ];
     prePatch = ''
+      echo "ls"
+      ls
+      echo "ls $out"
+      ls $out
       echo ${doomLocal}
     '';
 
