@@ -183,6 +183,9 @@ let
         local = doomLocal;
       })
     ];
+    prePatch = ''
+      echo ${doomLocal}
+    '';
 
     buildPhase = ''
       patchShebangs bin
